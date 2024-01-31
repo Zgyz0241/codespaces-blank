@@ -1,89 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>night market</title>
-  </head>
-  <body>
-    <header>
-      <style>
-        h1{
-          color:blue;
-        }
-      </style>
-      <h1>Memories of the Night Market</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memories of the Night Market</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
 
-      <div class="byline" role="byline" aria-label="byline">
-        <div class="author">Geyuzhen Zhu</div>
-        <div class="separator">-</div>
-        <div class="author-title">graphic designer</div>
-        <div class="separator">-</div>
-        <time datetime="2024-01-23">23 January, 2024</time>
-      </div>
-    </header>
-    <main>
-      <!-- Main section of the article -->
-      <section class="street">
-        <h2>Snack Street</h2>
-        <p>
-          Every summer night, as the sun disappears from the horizon and the heat on the ground slowly recedes, the Snack Street begins to come alive. People converge from all corners of the city and they always arrive on time, as if this were a ritual, an unwritten appointment they had with summer.
-        </p>
-      </section>
+    h1, h2, h3, h4, h5, h6 {
+      margin: 0;
+    }
 
-        <h3>Barbecue</h3>
-        <p>
-          I walked on the asphalt road, the air is filled with the tantalizing scent of grilled meats, spices and marinades. Barbecue grills hissed and sputtered as sellers called out their foods, like a bustling symphony of sights, sounds, and scents. Stores line both sides of the road, showcasing a diverse palette of treats, from spicy to sweet, crunchy to soft. These snacks look even more delicious against the warm hue of neon lights.
-        </p>
-        <p>
-          The aromas became even more intoxicating as I approached a corner where a skilled pitmaster worked his magic. Clouds of savory smoke enveloped the air as he expertly basted skewers of succulent meats with a secret marinade, infusing them with a mouthwatering combination of spices and flavors. The charred edges and caramelized glazes on the barbecue created a visual feast, tempting passersby with the promise of a taste sensation.
-        </p>
-        <div class="text">
-          <p>
-            Around me, fellow food enthusiasts reveled in the diverse offerings, exchanging recommendations and sharing the joy of discovering new culinary delights. The variety of barbecue styles on display mirrored the cultural richness of the street, showcasing a global tapestry of tastes that ranged from savory and smoky to sweet and tangy. It was a feast for the senses, where the passion for barbecue united people in a shared appreciation for the art of grilling and the pleasure of indulging in a world of delicious possibilities.
-          </p>
-        </div>
-      <section class="snacks">
-        <h3>Cold Snacks</h3>
-        <div class="text">
-          <p>
-            However, out of all the hustle, it was the cold snacks that made me happiest. A sip of cold drink on a hot summer day is not to be missed. Vendors serve a wide variety of cold drinks in small plastic bowls, layered with color and texture, from refreshingly sweet green bean soup to more complex concoctions of red beans, peanuts and chewy jellies. People would gather around, taking refuge from the heat, sipping on their cold drinks, and getting lost in lively conversations.
-At this moment, adults leisurely enjoy their BBQ with old friends, children racing around with ice-cold treats dripping down their hands, and everyone soaking
-in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
-  
-          </p>
-        </div>
-      </section>
-      <section class="market">
-        <h2>Night Market</h2>
-        <div class="text">
-          <p>
-            But the snack street wasn't all about food. We affectionately called it the "night market," a place where one could find everything from quirky ornaments to rare collectibles. As a child, my eyes would widen at stalls displaying stacks of cartoon DVDs and colorful toys. A small crowd of children would gather, negotiating, trading, or simply dreaming about their next purchase.
-          </p>
-        </div>
-      </section>
+    .center {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('file://Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/background1.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 36px;
+    }
 
-      <section class="memory">
-        <h3>Memory</h3>
-        <div class="text">
-          <ul>
-            <li>
-              Adults leisurely enjoy their BBQ with old friends.
-            </li>
-            <li>
-              Children racing around with ice-cold treats dripping down their hands.
-            </li>
-            <p>
-              At this moment, everyone soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
-  
-            </p>
-           
-          </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      This article was originally published September 2023. It was updated January
-      2024.
-    </footer>
-  </body>
+    .byline {
+      text-align: center;
+      font-size: 14px;
+    }
+
+    .subtitle {
+      font-family: 'Poppression', sans-serif;
+      font-size: 24px;
+      margin: 40px;
+    }
+
+    .text {
+      font-size: 12px;
+      margin: 40px;
+    }
+
+    .image-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .image-container img {
+      height: 200px;
+    }
+
+    .image-container .text {
+      width: 50%;
+      font-size: 18px;
+      margin-left: 20px;
+    }
+
+    .night-market {
+      height: 100vh;
+      background-image: url('file://Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/night%20market.jpeg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .memory {
+      font-family: 'Poppins', sans-serif;
+      font-size: 24px;
+      margin: 40px;
+    }
+
+    .memory-text {
+      font-size: 12px;
+      margin: 40px;
+    }
+
+    .footer {
+      font-size: 10px;
+      text-align: center;
+      margin: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="center">
+  <h1>Memories of the Night Market</h1>
+  <div class="byline">
+    Geyuzhen Zhu - 23 January, 2024
+  </div>
+</div>
+
+<main>
+  <div class="subtitle">SNACK STREET</div>
+  <p class="text">
+    Every summer night, as the sun disappears from the horizon and the heat on the ground slowly recedes, the Snack Street begins to come alive. People converge from all corners of the city and they always arrive on time, as if this were a ritual, an unwritten appointment they had with summer.
+  </p>
+
+  <div class="image-container">
+    <img src="file://Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/bbq.jpeg" alt="BBQ Image">
+    <div class="text">
+      <h3 class="subtitle">Barbecue</h3>
+      <p>
+        I walked on the asphalt road, the air was filled with the tantalizing scent of grilled meats, spices, and marinades. Barbecue grills hissed and sputtered as sellers called out their foods, like a bustling symphony of sights, sounds, and scents. Stores line both sides of the road, showcasing a diverse palette of treats, from spicy to sweet, crunchy to soft. These snacks look even more delicious against the warm hue of neon lights.
+      </p>
+    </div>
+  </div>
+
+  <div class="image-container">
+    <div class="text">
+      <h3 class="subtitle">Background</h3>
+      <p>
+        The aromas became even more intoxicating as I approached a corner where a skilled pitmaster worked his magic. Clouds of savory smoke enveloped the air as he expertly basted skewers of succulent meats with a secret marinade, infusing them with a mouthwatering combination of spices and flavors. The charred edges and caramelized glazes on the barbecue created a visual feast, tempting passersby with the promise of a taste sensation.
+      </p>
+    </div>
+    <img src="file://Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/background.jpeg" alt="Background Image">
+  </div>
+
+  <div class="image-container">
+    <img src="file://Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/cold%20drink.jpeg" alt="Cold Drink Image">
+    <div class="text">
+      <h3 class="subtitle">Cold Snacks</h3>
+      <p>
+        However, out of all the hustle, it was the cold snacks that made me happiest. A sip of a cold drink on a hot summer day is not to be missed. Vendors serve a wide variety of cold drinks in small plastic bowls, layered with color and texture, from refreshingly sweet green bean soup to more complex concoctions of red beans, peanuts, and chewy jellies. People would gather around, taking refuge from the heat, sipping on their cold drinks, and getting lost in lively conversations. At this moment, adults leisurely enjoy their BBQ with old friends, children racing around with ice-cold treats dripping down their hands, and everyone soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
+      </p>
+    </div>
+  </div>
+
+  <div class="night-market">
+    <h2 class="subtitle">Night Market</h2>
+    <p>
+      We affectionately called it the "night market," a place where one could find everything from quirky ornaments to rare collectibles. A small crowd of children would gather, negotiating, trading, or simply dreaming about their next purchase.
+    </p>
+  </div>
+
+  <div class="memory">
+    <h2 class="subtitle">Memory</h2>
+  </div>
+
+  <div class="memory-text">
+    <ul>
+      <li>Adults leisurely enjoy their BBQ with old friends.</li>
+      <li>Children racing around with ice-cold treats dripping down their hands.</li>
+    </ul>
+    <p>
+      At this moment, everyone is soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
+    </p>
+  </div>
+</main>
+
+<footer class="footer">
+  This article was originally published in September 2023. It was updated in January 2024.
+</footer>
+
+</body>
 </html>
