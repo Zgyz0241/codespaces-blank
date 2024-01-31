@@ -5,16 +5,23 @@
     <title>night market</title>
     <style>
       body {
-        background-image: url('file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/background1.jpeg'); 
-        background-size: cover;
-        background-position: center;
-        color: #ffffff;
+        margin: 0; 
         font-family: 'Arial', sans-serif;
       }
 
       header {
         text-align: center;
-        padding: 50px; 
+        color: #ffffff;
+        padding: 50px;
+        background-image: url('file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/background1.jpeg'); 
+        background-size: cover;
+        background-position: center;
+      }
+
+      .header-content {
+        background: rgba(0, 0, 0, 0.5); 
+
+        padding: 20px;
       }
 
       h1, h2, h3 {
@@ -22,49 +29,87 @@
         font-family: 'Arial', sans-serif;
       }
 
-      h2::after {
-        content: url('file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/food.jpeg'); 
-        display: block;
-        margin-top: 10px; 
+      h2 {
+        margin: 0 auto; 
+      }
+
+      .full-screen-image {
+        width: 100%;
+        height: 100vh; 
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 20px; 
+      }
+
+      .text-with-image {
+        display: flex;
+        align-items: center;
+      }
+
+      .text-with-image img {
+        width: 50%;
+        height: auto;
+        margin-right: 20px; 
       }
     </style>
   </head>
   <body>
     <header>
-      <h1>Memories of the Night Market</h1>
-      <div class="byline" role="byline" aria-label="byline">
-        <div class="author">Geyuzhen Zhu</div>
-        <div class="separator">-</div>
-        <div class="author-title">graphic designer</div>
-        <div class="separator">-</div>
-        <time datetime="2024-01-23">23 January, 2024</time>
+      <div class="header-content">
+        <h1>Memories of the Night Market</h1>
+        <div class="byline" role="byline" aria-label="byline">
+          <div class="author">Geyuzhen Zhu</div>
+          <div class="separator">-</div>
+          <div class="author-title">graphic designer</div>
+          <div class="separator">-</div>
+          <time datetime="2024-01-23">23 January, 2024</time>
+        </div>
       </div>
     </header>
     <main>
       <!-- Main section of the article -->
       <section class="street">
         <h2>Snack Street</h2>
-        <p>
-          Every summer night, as the sun disappears from the horizon and the heat on the ground slowly recedes, the Snack Street begins to come alive. People converge from all corners of the city and they always arrive on time, as if this were a ritual, an unwritten appointment they had with summer.
-        </p>
+        <div class="text-with-image">
+          <img class="full-screen-image" src="file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/background.jpeg" alt="Snack Street Image"> 
+
+          <p>
+            Every summer night, as the sun disappears from the horizon and the heat on the ground slowly recedes, the Snack Street begins to come alive. People converge from all corners of the city and they always arrive on time, as if this were a ritual, an unwritten appointment they had with summer.
+          </p>
+        </div>
       </section>
 
       <section class="snacks">
-        <h3>Cold Snacks</h3>
-        <div class="text">
+        <h3>Barbecue</h3>
+        <div class="text-with-image">
+          <img class="full-screen-image" src="file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/bbq.jpeg" alt="Barbecue Image"> 
           <p>
-            However, out of all the hustle, it was the cold snacks that made me happiest. A sip of cold drink on a hot summer day is not to be missed. Vendors serve a wide variety of cold drinks in small plastic bowls, layered with color and texture, from refreshingly sweet green bean soup to more complex concoctions of red beans, peanuts and chewy jellies. People would gather around, taking refuge from the heat, sipping on their cold drinks, and getting lost in lively conversations.
-            At this moment, adults leisurely enjoy their BBQ with old friends, children racing around with ice-cold treats dripping down their hands, and everyone soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
+            I walked on the asphalt road, the air was filled with the tantalizing scent of grilled meats, spices and marinades...
           </p>
+        </div>
+
+        <h3>Cold Snacks</h3>
+        <div class="text-with-image">
+          <img class="full-screen-image" src="file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/cold%20drink.jpeg" alt="Cold Snacks Image"> 
+
+          <div class="text">
+            <p>
+              However, out of all the hustle, it was the cold snacks that made me happiest. A sip of cold drink on a hot summer day is not to be missed...
+            </p>
+          </div>
         </div>
       </section>
 
       <section class="market">
         <h2>Night Market</h2>
-        <div class="text">
-          <p>
-            But the snack street wasn't all about food. We affectionately called it the "night market," a place where one could find everything from quirky ornaments to rare collectibles. As a child, my eyes would widen at stalls displaying stacks of cartoon DVDs and colorful toys. A small crowd of children would gather, negotiating, trading, or simply dreaming about their next purchase.
-          </p>
+        <div class="text-with-image">
+          <img class="full-screen-image" src="file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/night%20market.jpeg" alt="Night Market Image"> 
+
+          <div class="text">
+            <p>
+              But the snack street wasn't all about food. We affectionately called it the "night market," a place where one could find everything from quirky ornaments to rare collectibles...
+            </p>
+          </div>
         </div>
       </section>
 
@@ -74,7 +119,9 @@
           <ul>
             <li>Adults leisurely enjoy their BBQ with old friends.</li>
             <li>Children racing around with ice-cold treats dripping down their hands.</li>
-            <li>At this moment, everyone soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.</li>
+            <p>
+              At this moment, everyone is soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
+            </p>
           </ul>
         </div>
       </section>
