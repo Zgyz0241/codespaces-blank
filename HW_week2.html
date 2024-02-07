@@ -2,142 +2,263 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>night market</title>
-    <style>
-      body {
-        margin: 0; 
-        font-family: 'Arial', sans-serif;
-      }
+    <title>Night Market</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&family=Poor+Story&family=Protest+Riot&family=Protest+Strike&family=Single+Day&display=swap" rel="stylesheet"
+      />
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,500&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet"/>
 
-      header {
-        text-align: center;
-        color: #ffffff;
-        padding: 50px;
-        background-image: url('file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/background1.jpeg'); 
-        background-size: cover;
-        background-position: center;
-      }
-
-      .header-content {
-        background: rgba(0, 0, 0, 0.5); 
-
-        padding: 20px;
-      }
-
-      h1, h2, h3 {
-        font-weight: bold;
-        font-family: 'Arial', sans-serif;
-      }
-
-      h2 {
-        margin: 0 auto; 
-      }
-
-      .full-screen-image {
-        width: 100%;
-        height: 100vh; 
-        object-fit: cover;
-        object-position: center;
-        margin-bottom: 20px; 
-      }
-
-      .text-with-image {
-        display: flex;
-        align-items: center;
-      }
-
-      .text-with-image {
-      display: flex;
-      align-items: center;
-      margin-bottom: 20px;
-    }
-
-    .text-with-image img {
-      width: 50%;
-      height: auto;
-      margin-right: 20px;
-    }
-      
-    </style>
   </head>
   <body>
-    <header>
-      <div class="header-content">
+    <div class="content-wrapper">
+      <nav class="navbar" role="navigation" aria-label="main menu">
+        <ol
+          class="breadcrumbs"
+          role="breadcrumb"
+          aria-label="breadcrumb navigation"
+        >
+          <li>Home</li>
+        </ol>
+
+        <ul class="main_nav" role="main_nav" aria-label="main navigation">
+          <li><a href="float.html">Float</a></li>
+          <li><a href="flex.html">Flex</a></li>
+          <li><a href="grid.html">Grid</a></li>
+        </ul>
+      </nav>
+
+      <header>
         <h1>Memories of the Night Market</h1>
+
         <div class="byline" role="byline" aria-label="byline">
           <div class="author">Geyuzhen Zhu</div>
           <div class="separator">-</div>
-          <div class="author-title">graphic designer</div>
+          <div class="author-title">Graphic designer</div>
           <div class="separator">-</div>
           <time datetime="2024-01-23">23 January, 2024</time>
         </div>
-      </div>
-    </header>
-    <main>
-      <!-- Main section of the article -->
-      <section class="street">
-        <h2>Snack Street</h2>
-        <div class="text-with-image">
-          <img class="full-screen-image" src="file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/background.jpeg" alt="Snack Street Image"> 
+      </header>
 
+      <main>
+        <!-- this is the main content of the article -->
+        <section class="intro">
+          <figure>
+            <img
+              class="sectionImage"
+              src="https://cdn.tatlerasia.com/tatlerasia/i/2022/09/06172841-night-market-taipei_cover_1500x1000.jpg"
+                width="500"
+              alt="intro"
+            />
+            <figcaption>Night Market in Raohe</figcaption>
+          </figure>
           <p>
-            Every summer night, as the sun disappears from the horizon and the heat on the ground slowly recedes, the Snack Street begins to come alive. People converge from all corners of the city and they always arrive on time, as if this were a ritual, an unwritten appointment they had with summer.
-          </p>
-        </div>
-      </section>
+            Every summer night, as the sun disappears from the horizon and the heat on the ground slowly recedes, the Snack Street begins to come alive. People converge from all corners of the city and they always arrive on time, as if this were a ritual, an unwritten appointment they had with summer.The warm glow of food stands casts a gentle ambiance, creating a sense of camaraderie that echoes through the laughter and chatter.
 
-      <section class="snacks">
-        <h3>Barbecue</h3>
-        <div class="text-with-image">
-          <img class="full-screen-image" src="file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/bbq.jpeg" alt="Barbecue Image"> 
+          </p>
+        </section>
+        <section class="snack">
+          <h3>Snack Street</h3>
+          <figure>
+            <img
+              src="https://cdn.tatlerasia.com/tatlerasia/i/2022/09/27144951-markus-winkler-ilytglvw1mi-unsplash_cover_1499x1000.jpg"
+              width="500"
+              alt="snack street"
+            />
+            <figcaption>Snack Street in Thailand</figcaption>
+          </figure>
           <p>
             I walked on the asphalt road, the air was filled with the tantalizing scent of grilled meats, spices and marinades. Barbecue grills hissed and sputtered as sellers called out their foods, like a bustling symphony of sights, sounds, and scents. Stores line both sides of the road, showcasing a diverse palette of treats, from spicy to sweet, crunchy to soft. These snacks look even more delicious against the warm hue of neon lights.
-         
-            The aromas became even more intoxicating as I approached a corner where a skilled pitmaster worked his magic. Clouds of savory smoke enveloped the air as he expertly basted skewers of succulent meats with a secret marinade, infusing them with a mouthwatering combination of spices and flavors. The charred edges and caramelized glazes on the barbecue created a visual feast, tempting passersby with the promise of a taste sensation.
+
           </p>
-        </div>
+          <p>
+            The aromas became even more intoxicating as I approached a corner where a skilled pitmaster worked his magic. Clouds of savory smoke enveloped the air as he expertly basted skewers of succulent meats with a secret marinade, infusing them with a mouthwatering combination of spices and flavors. The charred edges and caramelized glazes on the barbecue created a visual feast, tempting passersby with the promise of a taste sensation.
 
-        <h3>Cold Snacks</h3>
-        <div class="text-with-image">
-          <img class="full-screen-image" src="file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/cold%20drink.jpeg" alt="Cold Snacks Image"> 
+          </p>
+          <p>
+            Around me, fellow food enthusiasts revealed in the diverse offerings, exchanging recommendations and sharing the joy of discovering new culinary delights. The variety of barbecue styles on display mirrored the cultural richness of the street, showcasing a global tapestry of tastes that ranged from savory and smoky to sweet and tangy. It was a feast for the senses, where the passion for barbecue united people in a shared appreciation for the art of grilling and the pleasure of indulging in a world of delicious possibilities.
+          </p>
+          <p>
+            As I continued my journey through this gastronomic haven, I found myself drawn to a particularly lively section of the street where vendors competed for attention with vibrant displays and creative presentations. One vendor, in particular, stood out with a towering grill that emitted a mesmerizing dance of flames. The sizzle and crackle of skewers being turned on the grill were accompanied by the rhythmic beats of live music, creating an immersive experience that transcended the mere act of eating. It was a culinary performance, where each vendor showcased not only their culinary expertise but also their flair for showmanship.
+          </p>
+          <p>
+            As I meandered through the crowd, I couldn't resist stopping at various stalls to sample the diverse offerings. From perfectly grilled kebabs to tender pulled pork sandwiches, the array of flavors was a testament to the melting pot of culinary traditions present on this bustling street. The vendors, with their contagious enthusiasm and pride in their creations, shared stories of family recipes passed down through generations and the unique twists they added to make each dish truly their own. It was a celebration of food as a cultural expression, a communal art form that brought people together, transcending language barriers and creating a shared bond over the universal pleasure of a good meal.
+          </p>
+          <p>
+            As the night progressed, the atmosphere on the street became even more electric. The neon lights cast a warm glow on the faces of satisfied patrons, and the hum of conversations blended with the sizzling symphony of grills. In this culinary wonderland, strangers became friends as they gathered around communal tables, exchanging stories and laughter over plates of delectable treats. The street, once just a thoroughfare, had transformed into a living, breathing testament to the power of food to unite, delight, and create lasting memories in the hearts and palates of all who ventured into its savory embrace.
+          </p>
+          <p>
+            I found myself drawn to a makeshift seating area adorned with twinkling fairy lights, where locals and tourists alike gathered to relish their chosen delicacies. The air buzzed with conversations in various languages, creating a harmonious symphony of cultural exchange. It was a testament to the universal language of food, a medium through which people from different corners of the world could connect and share a moment of joy.
+          </p>
+        </section>
+        <section class="snack 2">
+          <figure>
+            <img
+              src="https://res.klook.com/image/upload/q_85/c_fill,w_750/v1685334251/blog/czjjmzviu0k27viqbxnr.jpg"
+              width="500"
+              alt="Night Market in Taibei"
+            />
+            <figcaption>Night Market in Taibei</figcaption>
+          </figure>
+          <p>
+            As I savored the last bites of a particularly succulent barbecue creation, I marveled at how this street had become a melting pot of flavors and stories. It wasn't just a culinary adventure; it was a journey through the heart of a community that thrived on the love for good food and the joy of sharing it. The experience lingered in my memory, a vivid tapestry of sights, sounds, and tastes that showcased the beauty of diversity and the simple pleasure of breaking bread together on a lively, neon-lit street.
+          </p>
+          <p>
+            The Snack Street, adorned with colorful banners and lively signage, becomes a beacon of anticipation as dusk settles in. The aroma of grilling meats and the sweet scent of confections permeate the air, drawing in a diverse crowd eager to partake in the seasonal festivities. It's a ritual that transcends age, social status, and background, uniting the community in a shared love for the ephemeral delights of summer nights.
+          </p>
+          <p>
+            As the first stars twinkle overhead, the Snack Street transforms into a bustling marketplace of culinary wonders. Families with children in tow, couples hand in hand, and solo wanderers all weave through the lively stalls, their eyes lighting up with excitement at the prospect of discovering new flavors. The warm glow of food stands casts a gentle ambiance, creating a sense of camaraderie that echoes through the laughter and chatter.
+          </p>
+          <p>
+            The Snack Street, with its tantalizing array of treats, becomes a playground for the senses. From the sizzle of skewers on the grill to the crisp crunch of freshly fried snacks, each vendor presents a unique offering, inviting patrons to embark on a gastronomic adventure. It's not just about the food; it's about the shared experience of indulging in the fleeting pleasures of summer nights, creating memories that linger long after the season has passed.
+          </p>
+          <p>
+           As the night progresses, the Snack Street becomes a lively social hub. Friends gather at communal tables, swapping stories and relishing in the shared joy of good company and great food. The atmosphere is infectious, and the Snack Street becomes more than just a culinary destination—it becomes a vibrant celebration of community and the simple pleasures that make summer nights truly magical.
+          </p>
+        
+        </section>
+        <section class="Barbecue ">
+          <h3>Barbecue Stand</h3>
+          <figure>
+            <img
+              src="https://www.saveur.com/uploads/2019/03/18/46M22BZDS3DNY4JQRRDVLTL5JM.jpg?auto=webp"
+              width="500"
+              alt="Taiwanese Night Market"
+            />
+            <figcaption>Taiwanese Night Markete</figcaption>
+          </figure>
+          <p>
+            The heart of any night market barbecue lies in the sizzle and aroma that wafts through the air. Grills hiss and crackle, creating a symphony that beckons passersby to partake in the culinary magic. Skewers loaded with succulent meats, marinated to perfection, are expertly tended to by skilled pitmasters. Whether it's yakitori in Tokyo, satay in Kuala Lumpur, each locale brings its unique twist to the world of grilled cuisine, offering a diverse range of flavors that cater to every palate.
 
-          <div class="text">
-            <p>
-              However, out of all the hustle, it was the cold snacks that made me happiest. A sip of cold drink on a hot summer day is not to be missed. Vendors serve a wide variety of cold drinks in small plastic bowls, layered with color and texture, from refreshingly sweet green bean soup to more complex concoctions of red beans, peanuts and chewy jellies. People would gather around, taking refuge from the heat, sipping on their cold drinks, and getting lost in lively conversations.
-At this moment, adults leisurely enjoy their BBQ with old friends, children racing around with ice-cold treats dripping down their hands, and everyone soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
-            </p>
-          </div>
-        </div>
-      </section>
+          </p>
+          <p>
+            One of the enchanting aspects of night market barbecues is the opportunity they provide to embark on a global culinary journey in a single location. Wander through the stalls and you'll find a kaleidoscope of offerings – from savory skewers to charred vegetables, each vendor showcasing their regional specialties. The night market barbecue is a melting pot of tastes, a place where cultures collide, and the universal love for grilled food bridges language barriers.
+          </p>
+          <p>
+            Beyond the culinary delights, night market barbecues are a celebration of community and social connection. Communal tables abound with friends, families, and strangers alike, sharing laughter, stories, and the joy of discovering new flavors together. The casual and open atmosphere encourages people to let their guard down, fostering a sense of unity among diverse groups drawn together by the love of good food and the shared experience of the night market.
+          </p>
+          <p>
+            The vibrant colors of market stalls illuminated by twinkling lights, the enticing aroma of spices and marinades, the lively banter of vendors calling out their offerings – night market barbecues are a symphony for the senses. It's not just about satisfying hunger; it's about indulging in a holistic experience that engages sight, sound, smell, touch, and, of course, taste.
+          </p>
+          <p>
+            Night market barbecues are more than just a culinary adventure; they are a cultural phenomenon that brings people together under the stars to celebrate the joy of good food and shared moments. Whether you're a seasoned traveler seeking new gastronomic horizons or a local looking for an evening of delight, the allure of night market barbecues is universal. So, embrace the sizzle, navigate the vibrant stalls, and immerse yourself in the enchanting world of night market barbecues – where the magic of the night meets the magic of the grill.
+          </p>
+         
+        </section>
+        <section class="drink">
+          <h3>Cold Drink</h3>
+          <figure>
+            <img
+              src="https://p9.itc.cn/q_70/images03/20221007/ef81f452581f4710b5a71d1d7f78c82d.jpeg"
+              width="500"
+              alt="Guangdong Sweet Drink"
+            />
+            <figcaption>Guangdong Sweet Drink</figcaption>
+          </figure>
+          <p>
+            In the midst of the bustling night market barbecue scene, amidst the sizzling skewers and savory aromas, there exists a cool oasis of delight that elevates the entire experience – the realm of cold snacks. As the heat of the summer night envelopes the crowded streets, vendors strategically position themselves, offering a refreshing respite in the form of vibrant, chilled concoctions served in small plastic bowls.
+          </p>
+          <p>
+            The joy of a cold drink on a sweltering summer day is unparalleled, and night market vendors seize this opportunity to craft a sensory symphony of color and texture. From the classic, refreshingly sweet green bean soup to more intricate blends featuring red beans, peanuts, and chewy jellies, the offerings span a spectrum of flavors that cater to diverse palates. The sight of these artfully layered bowls, each a miniature masterpiece, beckons patrons to indulge in a momentary escape from the summer heat.
+          </p>
+          <p>
+            As the night unfolds, a unique social dynamic emerges around the cold snack stalls. People gather around makeshift tables, seeking refuge from the warmth, clutching their plastic bowls filled with icy delights. The clinking of spoons against the bowls harmonizes with the lively conversations that flow freely in the cool night air. It becomes a communal experience, a shared moment of respite where strangers become companions, united by the simple pleasure of sipping on a cold drink under the enchanting night sky.
+          </p>
+          <p>
+            In this enchanting atmosphere, the synergy of cold snacks and barbecue creates a perfect balance. Adults, finding solace from the summer heat, leisurely enjoy their barbecues alongside old friends, relishing the camaraderie and the delectable flavors of the grill. Meanwhile, children, their faces lit with joy, race around with ice-cold treats in hand, the colorful drips serving as a testament to the blissful abandon of summer nights.
+          </p>
+          <p>
+            These nights, with their rich tapestry of experiences, linger in memory as a testament to the simple joys of life. The intertwining of warm barbecue aromas and the cool refreshment of snacks paints a vivid picture of a community coming together to celebrate the magic of a warm summer night. It's a sensory journey that transcends the palate, imprinting the heart with the enduring charm of shared moments and the laughter that echoes under the stars. In the end, night market barbecues, with their fusion of sizzling grills and chilled delights, become a celebration of life's pleasures, a cherished memory etched in the collective consciousness of those fortunate enough to partake in this culinary and communal extravaganza.
+          </p>
+         
+        </section>
+        <section class="Bazaar">
+          <h3>Quirky Bazaar</h3>
+          <figure>
+            <img
+              src="https://www.holidify.com/images/cmsuploads/compressed/hong-kong-1078949_960_720_20200326190326.jpg"
+              width="500"
+              alt="Night Market in Hongkong"
+            />
+            <figcaption>Night Market in Hongkong</figcaption>
+          </figure>
+          <p>
+            Beyond the tantalizing array of culinary delights, the Snack Street, affectionately known as the "night market," unfolds into a multifaceted wonderland where the allure extends beyond the realm of food. With each step, the vibrant tapestry of the market reveals a treasure trove of quirky ornaments, rare collectibles, and a myriad of goods that captivate the imagination. The Snack Street is a haven for seekers.
+          </p>
+          <p>
+            In my childhood, the night market held a special place in my heart, and its non-food offerings added an extra layer of enchantment. The atmosphere pulsated with the energy of both vendors and patrons exploring the myriad stalls, each one a treasure trove of curiosities. Stacks of cartoon DVDs and shelves adorned with colorful toys transformed the market into a playground for the imagination. As a child, my wide-eyed fascination was piqued at every corner, as I marveled at the array of items on display.
+          </p>
+          <p>
+            A small crowd of children, much like myself, would inevitably gather around these non-food stalls, creating a lively scene reminiscent of a bustling bazaar. The air buzzed with the sound of youthful negotiations, friendly trading, and animated conversations fueled by shared dreams of the next prized purchase. The night market became a space not just for indulging in culinary delights but also for fostering a sense of community among the young dreamers who found joy in the pursuit of unique treasures.
+          </p>
+          <p>
+            The market stalls became vibrant canvases showcasing the dreams and creativity of local artisans. From handmade trinkets to vintage finds, each stall offered a story waiting to be discovered. The night market, with its eclectic mix of goods, became a place where curiosity was not only welcomed but celebrated. It was a haven for those seeking a break from the ordinary, a space where the boundaries of imagination were stretched and the joy of discovery transcended the limits of age.
+          </p>
+          <p>
+            As the sun dipped below the horizon and the Snack Street transitioned into the night market, it wasn't just the sizzling grills and cold snacks that beckoned; it was the promise of uncovering hidden gems and the thrill of navigating a world of curiosities. The Snack Street, with its culinary wonders and enchanting market stalls, became a holistic celebration of culture, community, and the simple joys of exploration. In this lively nocturnal playground, where food, treasures, and dreams converged, the night market became a testament to the power of shared experiences and the enduring magic of those warm summer nights.
+          </p>
+          
+        </section>
+        <section class="light">
+          <h3>Light Show</h3>
+          <figure>
+            <img
+              src="https://yourthaiguide.com/wp-content/uploads/2019/07/Your-Thai-Guide-Train-Night-Market-Ratchada-1.jpg"
+              width="500"
+              alt="Bangkok's second Train Night Market"
+            />
+            <figcaption>Bangkok's second Train Night Market</figcaption>
+          </figure>
+          <p>
+            The night market stalls become a visual feast, bathed in a kaleidoscope of lights that evoke a sense of wonder and delight. Neon signs, in all their brilliance, flicker and dance in a captivating rhythm, casting a warm glow that transforms the market into a luminous wonderland. The play of lights on the diverse array of goods, from culinary delights to unique treasures, elevates the entire atmosphere, adding a touch of magic to the night.
+          </p>
+          <p>
+            Each stall boasts its unique neon palette, creating a diverse symphony of colors that paint the night market in a rich tapestry of hues. From vibrant pinks and electric blues to warm oranges and neon greens, the neon signs evoke a sense of artistry, turning the market into a living, breathing canvas. The combination of these radiant colors reflects the spirit and diversity of the night market, offering a visual representation of the eclectic offerings that await exploration.
+          </p>
+          <p>
+            The dazzling light show is not only a backdrop but an integral part of the overall night market experience. The interplay of lights accentuates the culinary delights, making skewers glisten and cold snacks sparkle enticingly. The neon signs adorning stalls selling unique collectibles create an ambiance that feels almost otherworldly, inviting patrons to wander through this illuminated wonderland with wide-eyed wonder.
+          </p>
+          <p>
+            Beyond their aesthetic appeal, the neon signs of night market stalls serve as beacons, drawing people together in a shared appreciation for the beauty that unfolds after dark. Communal seating areas, lit by the soft glow of hanging lanterns and neon accents, become spaces where friends and families gather, forging connections under the radiant night sky. The shared experience of navigating the dazzling light show fosters a sense of community, creating memories that linger long after the stalls close for the night.
+          </p>
+          <p>
+            The night market stalls, adorned with their mesmerizing light displays, transform into more than just places to eat and shop—they become living art installations, captivating all who venture into their radiant embrace. The neon signs and lights are not mere embellishments; they are storytellers, painting narratives of culture, diversity, and the joyous energy that thrives under the canopy of the night market. As the lights flicker and the night unfolds, the night market becomes a celebration of the visual senses, a luminous symphony that invites patrons to immerse themselves in the magic of a night illuminated by the radiant glow of neon dreams.
+          </p>
+          <p>
+            Adults leisurely enjoy their BBQ with old friends. Children racing around with ice-cold treats dripping down their hands. t this moment, everyone is soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
 
-      <section class="market">
-        <h2>Night Market</h2>
-        <div class="text-with-image">
-          <img class="full-screen-image" src="file:///Users/zhugeyuzhen/Desktop/2024%20Spring/3%20UI/image/night%20market.jpeg" alt="Night Market Image"> 
-
-          <div class="text">
-            <p>
-              But the snack street wasn't all about food. We affectionately called it the "night market," a place where one could find everything from quirky ornaments to rare collectibles. As a child, my eyes would widen at stalls displaying stacks of cartoon DVDs and colorful toys. A small crowd of children would gather, negotiating, trading, or simply dreaming about their next purchase.
-          </div>
-        </div>
-      </section>
-
-      <section class="memory">
-        <h3>Memory</h3>
-        <div class="text">
+          </p>
+         
+        </section>
+        <section class="tips">
+          <h3>Practical Tips</h3>
+          <figure>
+            <img
+              src="https://assets3.thrillist.com/v1/image/3078512/1200x630/flatten;crop_down;webp=auto;jpeg_quality=70"
+              alt="Hongkong Might Market"
+               width="500"
+            />
+            <figcaption>Hongkong Might Market</figcaption>
+          </figure>
           <ul>
-            <li>Adults leisurely enjoy their BBQ with old friends.</li>
-            <li>Children racing around with ice-cold treats dripping down their hands.</li>
-            <p>
-              At this moment, everyone is soaking in the magic of a warm summer night. Those nights, with their rich tapestry of experiences, are forever etched in my memory, serving as a testament to the simple joys of life.
-            </p>
+            <li>
+              Night markets often come to life as the sun sets, so arriving early ensures you can witness the transformation from dusk to night. This allows you to explore the stalls before the crowds peak and fully appreciate the beauty.
+            </li>
+            <li>
+              Night markets can get crowded and the weather can vary, so dress comfortably and consider the climate. Wear comfortable shoes for walking, and bring a light jacket in case the night turns cooler. 
+            </li>
+            <li>
+              While some night markets accept credit cards, it's always a good idea to carry some cash, especially small denominations. This makes transactions smoother, especially when purchasing snacks or small items from vendors who may not have the capability to process card payments.
+            </li>
+            <li>
+              Night markets are a perfect opportunity to indulge in local cuisine. Be adventurous and try dishes that are specialties of the region. Whether it's skewers from a barbecue stall or a unique cold snack, embracing the local flavors adds an extra layer to your night market experience.
+            </li>
           </ul>
-        </div>
-      </section>
-    </main>
-    <footer>
-      This article was originally published September 2023. It was updated January
-      2024.
-    </footer>
+        </section>
+      </main>
+      <footer>
+        This article was originally published September 2023. It was updated January 2024.
+      </footer>
+    </div>
   </body>
 </html>
