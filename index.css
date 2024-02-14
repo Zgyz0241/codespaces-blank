@@ -20,7 +20,7 @@ body {
   display: block;
   width: 100%;
   padding: 0;
-  background-color: darkgray;
+  background-color: sandybrown;
   text-align: right;
 }
 
@@ -195,7 +195,7 @@ li {
 }
 
 footer {
-  background-color: lightgray;
+  background-color: sandybrown;
   color: white;
   clear: both;
   text-align: center;
