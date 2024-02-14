@@ -7,9 +7,16 @@
 }
 
 .navbar {
-  grid-column: span 4; 
+  grid-column: span 1; 
 }
 
 main {
-  grid-column: span 3;
+  grid-column: span 3; 
+}
+
+/* Add media query for responsiveness */
+@media screen and (max-width: 768px) {
+  .content-wrapper {
+    grid-template-columns: 1fr; 
+  }
 }
