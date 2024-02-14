@@ -1,5 +1,15 @@
+/* grid.css */
+
 .content-wrapper {
   display: grid;
   grid-template-columns: 1fr 3fr; 
   gap: 20px; 
+}
+
+.navbar {
+  grid-column: span 4; 
+}
+
+main {
+  grid-column: span 3;
 }
